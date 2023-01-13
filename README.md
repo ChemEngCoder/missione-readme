@@ -1,4 +1,5 @@
 # Mission·E
+![version v1.0.1](https://img.shields.io/badge/version-v1.0.1-blue "version v1.0.1") ![GitHub issues](https://img.shields.io/badge/issues-0%20open-brightgreen "issues open")
 #### High level Overview
 This README outlines the Mission·E platform – an online platform that was developed with the goal of reducing fertilizer-based greenhouse gas emissions. We have developed a platform designed to be used by both farms and those who work within the agricultural industry and are interested in quantifying greenhouse gas emissions 
 
