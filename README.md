@@ -41,6 +41,7 @@ The first portion of the DNDC model estimate soil properties based on input para
 The second component, consisting of the “nitrification, denitrification and fermentation sub-models, predicts emissions of carbon dioxide (CO2), methane (CH4), ammonia (NH3), nitric oxide (NO), nitrous oxide (N2O) and dinitrogen (N2) from the plant-soil systems” (Guo et al., 2020).
 
 ![DNDC Model](/images/dndc.png)
+###### Figure 1: DNDC Model Diagram (courtesy of the University of New Hampshire)
 
 ### Data Requirements
 There were extensive data required in order to run this model. This section will highlight the necessary parameters required. 
@@ -48,6 +49,7 @@ There were extensive data required in order to run this model. This section will
 In order to run this model, we need to input soil properties on a site-specific basis. The input window for this model is as follows:
 
 ![Soil Properties](/images/soil.png)
+###### Figure 2: Soil properties in DNDC model
 
 A sample of the input parameters is as follows:
 
