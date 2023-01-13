@@ -12,7 +12,7 @@ The web app is designed with a modern microservice architecture. By separating e
 
 In order to capture the complex layout of the microservices an architecture diagram is used. Remote sensing data is brought in from external cloud providers and preprocessed to capture only the most essential data. At the core is the private API which manages access to and from the relational database which stores both raw data and data at intermediate stages of processing. The backend is split into two services to accommodate for the differences in complexity and compute times for each data processing objective. The API gateway manages access to the two “frontend” services – the dashboard UI that allows farmers to input and view data, as well as the public API allowing analysts to programmatically obtain data at scale.
 
-![Architecture diagram]()
+![Architecture diagram](/images/architecture.png)
 
 ### Languages + Frameworks
 The key languages and frameworks used are summarized below:
@@ -39,14 +39,14 @@ We developed this methodology after an extensive literature review examining met
 The first portion of the DNDC model estimate soil properties based on input parameters such as soil temperature, moisture, pH, redox potential (Eh) and substrate concentration (University of New Hampshire, 2007).
 The second component, consisting of the “nitrification, denitrification and fermentation sub-models, predicts emissions of carbon dioxide (CO2), methane (CH4), ammonia (NH3), nitric oxide (NO), nitrous oxide (N2O) and dinitrogen (N2) from the plant-soil systems” (Guo et al., 2020).
 
-![DNDC Model]()
+![DNDC Model](/images/dndc.png)
 
 ### Data Requirements
 There were extensive data required in order to run this model. This section will highlight the necessary parameters required. 
 #### Soil and Climate
 In order to run this model, we need to input soil properties on a site-specific basis. The input window for this model is as follows:
 
-![Soil Properties]()
+![Soil Properties](/images/soil.png)
 
 A sample of the input parameters is as follows:
 
@@ -94,9 +94,9 @@ To determine the cost savings, we developed an industry average cost of fertiliz
 ### Website
 When vising the future Mission·E homepage potential customers are greeted with information regarding the necessity of our solution – facts documenting the effects of overapplication of fertilizer, excess emissions and reduced soil carbon. The resulting solution is a breakdown of the key features of the application to address the various needs. Finally information about the pricing structure is provided. By pressing the login button the user is redirected to the web application where existing users can be further redirected based on their account type.
 
-![Website 1]()
-![Website 2]()
-![Website 3]()
+![Website 1](/images/web1.png)
+![Website 2](/images/web2.png)
+![Website 3](/images/web3.png)
 
 ### Web App
 Since Mission·E is a web application installation is not required. Instead it can be accessed from any device running a modern web browser – including laptops, tablets and mobile phones. As such, farmers are unrestricted in how they use the application, whether it be in the office or out on the field.
@@ -104,12 +104,12 @@ Since Mission·E is a web application installation is not required. Instead it c
 ### UI for farmers
 The principle goal of the application is to provide farmers with insights that allow them to implement more efficient and sustainable practices to help their bottom line and the planet. It is also essential that the farmers using the application are not weighed down by the need to perform a lot of complex data entry or calculations. The UI consists primarily of a map allowing them to gain an overview of their operation and their fields. New fields can easily be added, and farmers are able to draw precise plot boundaries themselves eliminating the need for costly surveying. With boundaries mapped out,  farmers can add their crop types and key inputs on a field basis, allowing them to keep track of this information and feeding the model with the necessary information to make predictions. By sending the information to the application backend and receiving the appropriate output, the frontend can then display important predictions such as the economically optimal nitrogen rate (EONR) on a field basis, and the associated fertilizer and cost savings.
 
-![Farmer UI]()
+![Farmer UI](/images/farm.png)
 
 ### UI for analysts
 Analysts are given a more high level overview to both allow them to develop more generalized insights, as well as protecting the data privacy of the farmers. Trends for key agricultural insights such as fertilizer usage, emissions and irrigation are provided on a regional basis, and may be provided on a more precise level in the case of more specific partnerships between the farm and analyst firm. Valuable data such as the crop distribution are freely available in the US, but not in Canada. As such we have used the example of California to forecast what these insights would look like after the data has been collected for the Canadian context.
 
-![Analyst UI]()
+![Analyst UI](/images/analyst.png)
 
 ### Public API for analysts
 In order to make data processing at scale easier a public API has been included as a core component of the product roadmap. This allows data clients to programmatically access all of the data they need, and integrate it seamlessly into existing data pipelines.
@@ -148,6 +148,7 @@ Mark Spahl
 
 ## References
 Kuwayama, T., Croes, B. E., & FitzGibbon, M. (2020). Assessment of Nitrogen Oxide Emissions and San Joaquin Valley PM2.5 Impacts From Soils in California. Journal of Geophysical Research: Atmospheres, 125(24), e2020JD033304. https://doi.org/10.1029/2020JD033304
+
 University of New Hampshire. (2007). User ’ s Guide for the DNDC Model. Oceans, 61.
 
 
